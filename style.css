@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+}
+#header{
+    background: orangered;
+}
+
+.fa-brands{
+    padding: 7px;
+    border-radius: 50%;
+    background-color: rgb(103, 77, 77);
+    color: white;
+    
+}
+.fa-brands:hover{
+    background-color: white;
+    color: orangered;
+}
+.nav-item .nav-link{
+    font-size: 18px;
+    font-weight: 600;
+}
+/* .........carosel....... */
+#c-item{
+    height: 500px;
+    width: 100%;
+} 
+
+/* ..........banner........ */
+.banner{
+    position: relative;
+    background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('/img/bg_banner1.jpg');;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    
+}
+/* ........... */
+
+.team-member .image{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.team-member .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -10%;
+    background-color: rgba(255, 77, 41, 0.7);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.team-member .social-icons {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.team-member .social-icons a {
+    font-size: 30px;
+} 
+
+.team-member:hover .social-icons {
+    top: 50%;
+    opacity: 1;
+}
+
+.team-member:hover .overlay {
+    top: 0%;
+    opacity: 1;
+}
+/* .........reviews....... */
+#reviews{
+    margin-top: 70px;
+    background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(/img/bg_banner1.jpg), #082032;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#carousel-item{
+    padding: 5% 15%;
+    align-items: center;
+    color: white;
+}
+.feedback{
+    width: 120px;
+    height: auto;
+}
+/* .......footer...... */
+.foo-icon .fa-brands{
+    width: 50px;
+    height: 50px;
+    padding-top: 17px;
+    background-color: grey;
+}
+.foo-icon .fa-brands:hover{
+    background-color: white;
+}
+#footer-info{
+  
+    padding-top: 50px;
+}
+.footer-bottom {
+    margin-top: 50px;
+    border-top: 1px solid white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+
